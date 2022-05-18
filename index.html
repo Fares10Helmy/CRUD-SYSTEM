@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>java script</title>
+</head>
+<body>
+    <div class="container py-5">
+
+        <h1>   Product management system </h1>
+        <h1>&nbsp;------------------------------------- </h1>
+
+    <div class="form-group">
+        <label for="productNameInput">Product Name:</label>
+        <input class="form-control" type="text"id="productNameInput"> 
+    </div>
+
+    <div class="form-group">
+        <label for="productPriceInput">Product Price:</label>
+        <input onkeyup="getTotal()" class="form-control " type="number"id="productPriceInput"> 
+    </div>
+
+    <div class=" form-group" id="new" >
+
+        <input onkeyup="getTotal()"  type="number" id="taxes"       placeholder="taxes"> 
+        <input onkeyup="getTotal()"  type="number" id="ads"         placeholder="ads">
+        <input onkeyup="getTotal()"  type="number" id="discount"    placeholder="discount">
+        <small id="total"> </small>
+    </div>
+  
+
+    <div class="form-group">
+    <input class="form-control " type="number"id="count" placeholder="count"> 
+    </div>
+
+
+    <div class="form-group">
+        <label for="productCatogaryInput">Product Catogary:</label>
+        <input class="form-control" type="text"id="productCatogaryInput"> 
+    </div>
+
+    <div class="form-group">
+        <label for="productDescInput">Product Description:</label>
+        <textarea class="form-control" type="text"id="productDescInput"> </textarea>
+    </div>
+
+    <button id="addBtn"  onclick="addProduct()"  >Add Product</button>
+
+
+    </div>
+
+    <div class="container">
+        <input onkeyup="searchProduct(this.value)" placeholder="Search Product" class="form-control w-75 m-auto " type="text" >
+        
+        <div id="deleteAll"></div>
+
+        <table class="table table-dark table-striped mt-4">
+            <thead>
+                <th>Index</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Taxes</th>
+                <th>Ads</th>
+                <th>Discount</th>
+                <th>Total</th>
+                <th> Category</th>
+                <th> Description</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </thead>
+
+            <tbody id="tableBody">
+            
+            </tbody>
+        </table>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="js/file.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script> 
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+</body>
+</html>

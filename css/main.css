@@ -1,0 +1,59 @@
+body 
+{
+    background-color: #222;
+    color: white;
+
+}
+
+div h1 
+{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+div input.form-control
+{
+    background-color: #111;
+    color: white;
+}
+
+#new input
+{
+    background-color: #111;
+    color: white;
+    border: none;
+    width: 30%;
+    height: 40px;
+
+}
+
+#total{background-color: #a00d02;padding: 9px 5px; border-radius: 4px;}
+#total::before{content: "Total : ";}
+
+
+#new input:focus{background-color: #000;}
+
+textarea#productDescInput
+{
+     background-color: #111;
+     color: white;
+     
+}
+
+
+
+div input.form-control:focus{background-color: #000;color: white;}
+
+
+button{background-color: #310044;color: white; padding: 7px; border-radius: 4px; border: 1px solid #310044; width: 100%; }
+button:hover{background-color: #51045f;}
+
+
+#deleteAll button
+{
+    margin-top: 20px;
+    width: 100%;
+    background-color:#700902 ;
+    border: 1px solid #700902;
+}
+#deleteAll button:hover{background-color:#a00d02 ;}
